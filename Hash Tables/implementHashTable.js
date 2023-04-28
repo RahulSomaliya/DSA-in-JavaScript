@@ -33,7 +33,7 @@ class HashTable {
       return currentBucket.find(pair => pair[0] === key)?.[1];
     }
     return undefined;
-  }
+  } // Time complexity: O(1) - linear time
 
   seeFullObject() {
     console.log(`💎 this.#data: `, this.#data);
