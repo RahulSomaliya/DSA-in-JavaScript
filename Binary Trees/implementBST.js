@@ -219,3 +219,16 @@ myTree.insert(1, 0, 3, 8, 11);
 // console.log(`💎 myTree: `, myTree);
 myTree.print();
 myTree.lookup(29);
+
+// learning recursion
+function traverse(node) {
+  const tree = { value: node.value };
+  // console.log(`💎 node: `, node);
+  tree.left = node.left === null ? null : traverse(node.left);
+  tree.right = node.right === null ? null : traverse(node.right);
+  return tree;
+}
+
+const res = traverse(myTree.root);
+console.log(`💎 traverse response: `, res);
+// traverse shall return -> [5, 1, 3, 10, 8, 11]
