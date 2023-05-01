@@ -3,11 +3,13 @@ function reverseStringIteration(str) {
   return str.split('').reverse().join('');
 }
 
-function reverseStringRecursion(str) {
+function reverseStringRecursion(str, reversedStr = '') {
   // 'A N Y T H I N G'
-  str.split()
-  str.at(-1)
-  // TODO: Pending
+
+  if (!str) return reversedStr;
+
+  return reverseStringRecursion(str.slice(0, -1), reversedStr + str.at(-1));
 }
 
-reverseStringIteration('ANYTHING');
+// reverseStringIteration('ANYTHING');
+console.log(reverseStringRecursion('kushal somaliya'));
