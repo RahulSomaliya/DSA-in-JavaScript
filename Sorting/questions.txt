@@ -1,0 +1,28 @@
+//#1 - Sort 10 schools around your house by distance:
+// For such small data sets, it doesn't matter what sorting algo. we use, the pros and cons will be negligible. 
+// Ans: any algo -> Insertion sort
+
+//#2 - eBay sorts listings by the current Bid amount:
+// Every updated bid amount would most likely be marginally updated from its previous bid. So, the list is almost sorted, and so I would go for
+// Ans: Insertion Sort
+// Incorrect -> bit amount is very ranged, and so we would prefer radix or counting sort
+
+//#3 - Sport scores on ESPN
+// MergeSort
+// Incorrect -> it might be too much of an space compexity to use mergesort, we can instead go for quick sort. And the worst case scenario won't be an issue as they're all sports scores, so they won't be sorted (if they were, worst case would be an issue)
+
+//#4 - Massive database (can't fit all into memory) needs to sort through past year's user data
+// Quick sort --> Incorrect as worst case could give O(n^2)
+// the answer is merge sort as massive database are not sorted in local memory, so space compexity is not an issue, and we can't risk worst case scenario for quick sort, the merge sort would give us stable time compexity of O(n log(n)) even in worst case scenario
+
+//#5 - Almost sorted Udemy review data needs to update and add 2 new reviews
+// Insertion sort
+
+//#6 - Temperature Records for the past 50 years in Canada
+// may be Radix sort, or merge sort
+
+//#7 - Large user name database needs to be sorted. Data is very random.
+// Merge sort
+
+//#8 - You want to teach sorting for the first time
+// Bubble sort
