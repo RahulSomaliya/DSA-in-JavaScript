@@ -31,3 +31,14 @@ DFS: [9, 8, 45, 89, 0, 5, 3];
 //Determining whether a path exists between two nodes: DFS
 
 //Finding the shortest path: BFS
+
+// ---------------------------------
+// DFS has three types of traversals
+// InOrder, pre-order, post-order
+
+//         9
+//    4        20
+// 1   6     15    170
+InOrder: [1, 4, 6, 9, 15, 20, 170]; // useful for binary search tree for ascending order
+PreOrder: [9, 4, 1, 6, 20, 15, 170]; // really useful while recreating any tree
+PostOrder: [1, 6, 4, 15, 170, 20, 9]; // children comes before parents
